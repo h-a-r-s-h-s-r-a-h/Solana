@@ -13,7 +13,7 @@ export const Increment: FC<Props> = ({ counter, setTransactionUrl }) => {
   const [count, setCount] = useState(0);
   const [program, setProgram] = useState<anchor.Program<AnchorCounter>>();
   const { connection } = useConnection();
-  const wallet = useAnchorWallet();
+  const wallet = useAnchorWallet(); 
 
   useEffect(() => {
     let provider: anchor.Provider;
